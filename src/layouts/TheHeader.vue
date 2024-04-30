@@ -1,8 +1,11 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-primary"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Navbar scroll</a>
+        <a class="navbar-brand" href="#">요니</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,36 +23,15 @@
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <RouterLink class="nav-link" active-class="active" to="/"
+                >Home</RouterLink
+              >
+              <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarScrollingDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <RouterLink class="nav-link" active-class="active" to="/about"
+                >About</RouterLink
               >
-                Link
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarScrollingDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Link</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -68,7 +50,3 @@
     </nav>
   </header>
 </template>
-<scrtip>
-
-
-</scrtip>
